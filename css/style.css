@@ -19,7 +19,7 @@
 		font-family: 'Playfair Display', serif;
 		font-size: 11pt;
 		line-height: 1.75em;
-		background: #F4F4F4;
+		background: #FAFAFA;
 	}
 
 	h1,h2,h3,h4,h5,h6
@@ -375,7 +375,7 @@ sh-lira:before,.fa-try:before{content:"\f195"}
 
 	#nav
 	{
-		background: #f4f4f4;
+		background: #fAfAfA;
 	}
 
 		#nav-wrapper
@@ -865,3 +865,10 @@ input[type=text], textarea {
 	left: 10%;
 	
 }
+.framed iframe { 
+	width: 100%;
+	height: auto; 
+	height: 1200px; 
+	
+	}
+
