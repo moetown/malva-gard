@@ -1045,8 +1045,8 @@ input[type=text], textarea {
   background-color: #DFDFDF;
   color: black;
   cursor: pointer;
-  padding: 18px;
-	padding-left: 18%;
+  padding: 0px;
+	padding-left:0px;
   width: 100%;
 	height: 200px;
   border: none;
@@ -1069,7 +1069,9 @@ input[type=text], textarea {
   content: '\002B';
   color: black;
   font-weight: bold;
-  float: none;	
+  float: none;
+margin-top: -50px;
+
 }
 .active:after {
   content: "\2212";
@@ -1289,24 +1291,27 @@ body { margin: 0; }
 	height: auto;
 	width: 90%;
 	margin-left: 0px;
-	background: rgba(0, 0, 0, 0.6);
-	padding: 2%;
+	background: rgba(255, 255, 255, 0.6);
+	padding-top: 2%;
+	padding-bottom: 5%;
+	margin-top: 4%;
 	text-align: center;
-	border-radius: 5px;
-
+	border-radius: 1px;
+	color: black; 
 	
 	
 }
 
 .halftone p {
-	margin-top: 1%; 
-
-	padding-left: 3%;
-	padding-right: 3%;
+	margin-top: 2%; 
+	
+	padding-left: 7%;
+	padding-right: 7%;
 	font-family: PT sans, sans-serif;
-	color: #ffffff !important;
+	color: #000000 !important;
 	font-size: 18px;
 	text-align: center;
+	line-height: 1.5;
 }
 .halftone h2 {
 	margin-top: 2%; 
@@ -1461,4 +1466,27 @@ height:auto;
 	margin-top: 55px;
 	padding-left: 12%;
 	font-size: 1.3em;
+}
+
+.posleft{
+	float: left;
+	width: 50%;
+	height: inherit;
+	padding-left: 0px;
+}
+
+.posleft h2 {
+	margin-top: 13%;
+}
+
+.posright {
+	float:right;
+	width: 50%;
+	height: inherit;
+}
+
+.posright p {
+	font-family: PT sans, sans-serif; 
+	font-size: 16px;
+	padding-top: 15%;
 }
