@@ -61,8 +61,8 @@
 						
 						  <li><a href="index.html">welcome</a></li>
 							<li><a href="products.html">range</a></li>
-							<li><a href="shop.html">shop</a></li>
-							<li class="activated"><a href="about.html">about</a></li>
+							<li class="activated"><a href="shop.html">shop</a></li>
+							<li><a href="about.html">about</a></li>
 							<li><a href="contact.html">contact</a></li>
 							
 						</ul>
@@ -73,155 +73,119 @@
 	<!-- Header -->
 	
 	<!-- Main -->
-		<div id="main paper">
-			
+<div id="main paper">
+
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/pics19.jpg" style="width:inherit margin-top: 0px; padding-top: 0px;">
+   <div class="text marginAdded faded">
+     <h2>Our farm shop</h2>
+     <h3>Open every weekend 11.00 - 13.00</h3>
+   </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/pics18.jpg" style="width:inherit">
+  <div class="text"><h2>Buy all our products</h2><h3>Locally sourced, locally made</h3></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/pics17.jpg" style="width:inherit">
+	 <div class="text"><h2>Choose how to pay</h2><h3>Card, Swish or Cash available</h3></div>
+
 	
-
-<div class="slideshow-container">
-  <img src="images/pics39.jpg" style="width:inherit">
-  <div class="text marginAdded faded">
-     <h2>The life at Malva Farm</h2>
-     <h3>How come we started an apple juicery? Great question. </h3>
- </div>
 </div>
-	 
-<div class="container">
-	 <div class="row margin1">
-		 <div class="leftside backgroundImg1 w3-card-2 small">
-  
-		</div>
-		 <div class="rightside w3-card-2 small">
-		   <h2> "We love what we do and we do<br>it with passion & pride"</h2>
-			 <h6>Charlotte & Björn at Malva Gård</h6>
-		   
-			  <section>
-				 <!--- <button id="button3" class="button">Our process</button>--->
-				  
+<p><a class="prev" onClick="plusSlides(-1)">&#10094;</a></p>
+<p> <a class="next" onClick="plusSlides(1)">&#10095;</a></p>
+</div>	
+
+			<div class="clearfix"></div>
 			
-			 </section>
-			 
- </div>
+<script>		
+var slideIndex = 1;
+showSlides(slideIndex);
 
-	</div>
-<div class="w3-card-2 large"> 
-    			
-<div class="accordion">
-  <ul>
-    <li>
-      <div> <a href="#">
-        <h2>Lorem Ipsum</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        </a> </div>
-    </li>
-    <li>
-      <div> <a href="#">
-        <h2>Lorem Ipsum</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        </a> </div>
-    </li>
-    <li>
-      <div> <a href="#">
-        <h2>Lorem Ipsum</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        </a> </div>
-    </li>
-    <li>
-      <div> <a href="#">
-        <h2>Lorem Ipsum</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        </a> </div>
-    </li>
-    <li>
-      <div> <a href="#">
-        <h2>Lorem Ipsum</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        </a> </div>
-    </li>
-    <li>
-      <div> <a href="#">
-        <h2>Lorem Ipsum</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        </a> </div>
-    </li>
-  </ul>
-</div>
- 
-</div>
-
-	 <div class="w3-card-2 large">
-		<div class="fitted">
-		 	<h2>A Sunshine story</h2>
-		 	<div class="border">........................................</div>
-		 	<p>We moved to Vemboö and Karatorp in 2009 with the urge to get our hands covered in soil and for a fresh start away from the city life. The apple plantations and widespread landscape was exactly what we'd hoped for. We quickly renovated the Malva farm house and its surroundings and within a few years we had started to make our very own first apple juice with supervision of the local apple guru Erik Håkansson.</p>
-		 
-		</div> 
-	 </div>
-	
-	
-		 <div class="row margin1">
-		 <div class="leftside w3-card-2 small">
-		   <h2> How we grow</h2>
-		   <h3>Our way of doing organic agriculture</h3>
-			  <section>
-				  <button id="button3" class="button">Learn here</button>
-				  
-			
-			 </section>
-			 
-			 
-<div id="myModal3" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content animate-opacity">
-    <span class="close3">&times;</span>
-    <h2>Our Process</h2>
-	  <p></p>
-	  <p>Behöver lite tankar kring vad som skall vara här</p>
-	 
-  </div>
-
-</div>
-<script>
-// Get the modal
-var modal3 = document.getElementById('myModal3');
-
-// Get the button that opens the modal
-var btn = document.getElementById("button3");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName ("close3")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal3.style.display = "block";
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal3.style.display = "none";
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal3) {
-    modal3.style.display = "none";
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
   }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
 }
-</script>	
-			 
-			 
-		 </div>
-<div class="rightside small">
-  <img src="images/pics38.jpg" style="width:100%; height: 220px;">
+	
+</script>
+				
+		
+			
+	<div class="container filterfunction">
+		
+<button class="collapsible"><h2>Apple juice</h2></button>
+<div class="content">
+  <p>Här kan ni lägga in vad ni vill - Höjden justeras beroende på innehåll</p>
 </div>
-	</div> 
-	 </div>
+	<button class="collapsible"><h2>Marmelades</h2></button>
+<div class="content">
+  <p>Här kan ni lägga in vad ni vill</p>
+</div>
+<button class="collapsible"><h2>Smoothies</h2></button>
+<div class="content">
+  <p>Här kan ni lägga in vad ni vill</p>
+</div>
+<button class="collapsible">
+	<h2>Other products</h2>
 
-	 
- </div>	
-					
+</button>
+<div class="content">
+  <p>Här kan ni lägga in vad ni vill</p>
+</div>	
 
 
+</div>
+			
+			
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+</script>
+
+			</div>
+	<!-- /Main -->
+
+	<!-- Footer -->
+		
 
 	<!-- Copyright -->
 		<div id="copyright">	
@@ -250,7 +214,7 @@ window.onclick = function(event) {
 				<a href="https://www.freepik.com/free-vector/variety-of-hand-drawn-social-media-icons_1005142.htm">Social media logos are Designed by Freepik</a></div>
 			
 		</div>
-				
+				</div>
 <script>			
 var myVar;
 
@@ -264,6 +228,7 @@ function showPage() {
 }
 
 </script>
+
 <script>		
 filterSelection("all")
 function filterSelection(c) {
@@ -312,8 +277,8 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-</script>			
-
+</script>
+		
 	</body>
 	
 	

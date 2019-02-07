@@ -8,14 +8,11 @@
 	<head>
 		<title>Malva Farm, Vemboö</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="Organic produce crafted on Vemboö, Sweden" />
-		<meta name="keywords" content="Organic produce Småland Sweden Malva Gård Farming KRAV apples" />
-		
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
 		
 		<link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script|PT+Sans|Playfair+Display" rel="stylesheet">
 		
-		
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-panels.min.js"></script>
@@ -24,15 +21,13 @@
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/filter.css" />
 		</noscript>
 	</head>
 	
-	
+	<body class="homepage paper" onload="myFunction()" style="margin:0;">
 
-	
-<body class="homepage paper" onload="myFunction()" style="margin:0;">
-
-<div id="loader"></div>
+		<div id="loader"></div>
 		<div style="display:none;" id="myDiv" class="animate-bottom">
 		
 	<!-- Header -->
@@ -58,92 +53,114 @@
 					
 				</ul>
 			</div>
-				<div id="nav-wrapper" class="container">
+			
+			<div id="nav-wrapper" class="container">
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-
+						
 						  <li class="activated"><a href="index.html">welcome</a></li>
-							<li ><a href="index.html">range</a></li>
-							<li><a href="index.html">shop</a></li>
-							<li><a href="index.html">about</a></li>
-							<li><a href="index.html">contact</a></li>
+							<li><a href="products.html">range</a></li>
+							<li><a href="shop.html">shop</a></li>
+							<li><a href="about.html">about</a></li>
+							<li><a href="contact.html">contact</a></li>
+							
 						</ul>
 					</nav>
 			</div>
-			<div class="container">
-				<div id="banner"><a href="#" class="image featured"><img src="images/pics11.jpg" alt=""></a></div>
-			</div>
+
 		</div>
 	<!-- Header -->
-		
 	
-	
-		
-
 	<!-- Main -->
-		<div id="main">
+		<div id="main paper" class="">
+		
 			
-			<div class="container">
-				
-				<header>
-				  <div class="row main">
-						<div class="leftside"><img src="images/logo.svg" style="width: 7em;"></div><div class="rightside"><h2>Malva Farm</h2><h3>Organic produce from Vemboö, Sweden</h3></div>
-					</div>
-					
-				</header>
-				
-				<div class="row">
-					<div class="4u">
-							<section>
-								<a href="#" class="image full"><img src="images/pics01.jpg" alt=""></a>
-								<p>Malva farm produces and cultivates organic apples and berries. We produce with KRAV certification and EU ECO labelling.<br></p>
-							</section>
-							<section>
-								<a href="" class="button">Products</a>
-							</section>
-						
-					</div>
-					
-					<div class="4u">
-							<section>
-								<a href="#" class="image full"><img src="images/pics02.jpg" alt=""></a>
-								<p>The premises are located at lake Åsnen on the island of Vemboö. Our production is done inhouse and we collaborate nation wide.<br></p>
-							</section>
-							<section>
-								<a href="" class="button">About us</a>
-							</section>
-						
-					</div>
-						<div class="4u">
-							<section>
-								<a href="#" class="image full"><img src="images/pics03.jpg" alt=""></a>
-								<p>Want to stay at Malva Farm? You can rent one of our two self-contained houses located at the premises with Åsnen just a few meters away!<br>
-							  </p>
-							</section>
-								<section>
-								<a href="https://www.swedcottages.se/engelska/boende/urshult_stugor/S28U_malva_gard.htm" class="button">Rent a house</a>
-							</section>
-						</div>
-					</div>
-				<div class="row padding"></div>		
-		</div>
+
+<div class="slideshow-container">
+  <img src="images/pics17.jpg" style="width:inherit height: auto;">
+	
+  <div class="text faded">
+	  
+	  <img src="images/logo.svg" style="width:5em; padding:0px;" id="logo1">
+     <h2 id="enlarge">Malva Farm</h2>
+     <h3 id="spaced">Organic produce from Vemboö, Sweden</h3>
+
+  </div>
+</div>
+	 
+<div class="container">
+	
+			
+	<div class="clearfix"></div>
+	 <div class="row">
+		 <div class="leftside w3-card-2 small">
+		   <h2> From crop to cup!</h2>
+		   <h3>Organic hand-picked fruits are used in all our juice</h3>
+			  <section>
+				  <a href="products.html"><button id="button3" class="button">Our products</button></a>
+				  
+			
+			 </section>
+			 
+			 
+<div id="myModal3" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content animate-opacity">
+    <span class="close3">&times;</span>
+    <h2>Our Process</h2>
+	  <p></p>
+	  <p>Behöver lite tankar kring vad som skall vara här</p>
+	 
+  </div>
+
+</div>
+<script>
+// Get the modal
+var modal3 = document.getElementById('myModal3');
+
+// Get the button that opens the modal
+var btn = document.getElementById("button3");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName ("close3")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal3.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal3.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal3) {
+    modal3.style.display = "none";
+  }
+}
+</script>	
+			 
+			 
+		 </div>
+<div class="rightside small">
+  <img src="images/pics38.jpg" style="width:100%; height: 220px;">
+</div>
 	</div>
-			<div id="collaborators" class="main">
+	
+	<div class="clearfix"></div>
+<div id="collaborators" class="main faded">
 				
 				<h4>Malva Farm collaborates with:</h4>
-			<a href="https://www.eldrimner.com//"><img src="images/eldrimner.jpg" class="padded" style="width: 100px;"></a>
-				<a href="https://www.krav.se/"><img src="images/krav.png" class="padded" style="width: 100px;"></a>
-				<a href="https://www.facebook.com/Malvagard/"><img src="images/matkultur.png" class="padded" style="width: 50px;"></a>
-				<a href="https://www.facebook.com/Malvagard/"><img src="images/ekolabel.jpg" class="padded" style="width: 100px;"></a>
+			<a href="https://www.eldrimner.com//"><img src="images/eldrimner.jpg" class="padded" style=""></a>
+				<a href="https://www.krav.se/"><img src="images/krav.png" class="padded" style=""></a>
+				<a href="http://matkultursmaland.se/"><img src="images/matkultur.png" class="padded" style=""></a>
+				<a href="http://ec.europa.eu/environment/ecolabel/"><img src="images/ekolabel.jpg" class="padded" style=""></a>
+	<a href="https://destinationasnen.se/"><img src="images/a.jpg" class="padded" style=""></a>
 			</div>
-<!-- /Main -->
-
-<!-- Footer -->
-
-		
-
-					
 <div class="accordion">
   <ul>
     
@@ -255,33 +272,45 @@ window.onclick = function(event) {
 	
 </div>
 
+	
+</div>
+	 
+ </div>
+
 			
-				
-					
-
-	<!-- /Footer -->
 
 
+		
 
 	<!-- Copyright -->
-		<div id="copyright">
-			<div class="container">		
-				<section id="inline">
-				
-					<a href="https://www.instagram.com/malva_gard/"><img src="images/instagram.svg"></a>	
-		<a href="https://www.facebook.com/Malvagard/"><img src="images/facebook.svg"></a>
-			
-				</section>
+	<div id="copyright">	
+	<section>
+		<div class="zoom">
+			<a href="https://www.instagram.com/malva_gard/"><img src="images/instagram.png"></a>	
+		</div>
+		<div class="zoom">
+			<a href="https://www.facebook.com/Malvagard/"><img src="images/facebook.png"></a>
+		</div>
+		<div class="zoom">
+			<a href="https://www.tumblr.com/blog/malvagard"><img src="images/tumblr.png"></a>
+		</div>
+		<div class="zoom">
+			<a href="mailto:info@malvagard.se?Subject=Från%20hemsidan"><img src="images/email.png"></a>
+		</div>
+		
+		<div class="zoom">
+			<a href="tel:+4670765863"><img src="images/phone.png"></a>
+		</div>
+	</section>
 		
 				<div id="small">
-				<a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+				 <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
 				
 				<a href="https://www.freepik.com/free-vector/variety-of-hand-drawn-social-media-icons_1005142.htm">Social media logos are Designed by Freepik</a></div>
-			</div>
+			
 		</div>
-</div>
-		
-<script>
+</div>				
+<script>			
 var myVar;
 
 function myFunction() {
@@ -292,12 +321,60 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
+
 </script>
+<script>		
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
 
-	</body>
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>			
+
+			
+			</body>
 	
-
-
-
 	
 </html>
